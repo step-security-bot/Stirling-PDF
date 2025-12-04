@@ -1,5 +1,5 @@
 # Frontend Dockerfile - React/Vite application
-FROM node:20-alpine AS build
+FROM node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463 AS build
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ COPY frontend .
 RUN npm run build
 
 # Production stage
-FROM nginx:alpine
+FROM nginx:alpine@sha256:b3c656d55d7ad751196f21b7fd2e8d4da9cb430e32f646adcf92441b72f82b14
 
 # Copy built files from build stage
 COPY --from=build /app/dist /usr/share/nginx/html

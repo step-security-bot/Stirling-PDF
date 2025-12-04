@@ -1,6 +1,6 @@
 # Backend Dockerfile - Java Spring Boot with all dependencies and build stage
 # Build the application
-FROM gradle:8.14-jdk21 AS build
+FROM gradle:8.14-jdk21@sha256:051d9a116793bdc5175a3f97a545718b750489eee85a7da20913c8a53f722a72 AS build
 
 COPY build.gradle .
 COPY settings.gradle .
