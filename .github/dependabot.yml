@@ -73,3 +73,18 @@ updates:
     directory: /frontend/src-tauri/provisioner
     schedule:
       interval: daily
+
+  - package-ecosystem: docker
+    directory: /docker/base
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /engine
+    schedule:
+      interval: daily
+
+  - package-ecosystem: cargo
+    directory: /frontend/src-tauri/thumbnail-handler
+    schedule:
+      interval: daily
