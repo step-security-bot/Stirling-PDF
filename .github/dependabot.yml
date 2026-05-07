@@ -19,12 +19,13 @@ updates:
 
   - package-ecosystem: "docker"
     directories:
-      - "/" # Location of Dockerfile
-      - "/docker/backend"
-      - "/docker/embedded"
-      - "/docker/frontend"
-      - "/docker/base"
-      - "/docker/engine"
+      - /
+      - /docker/backend
+      - /docker/embedded
+      - /docker/frontend
+      - /docker/base
+      - /docker/engine
+      - /engine
     schedule:
       interval: "weekly"
     cooldown:
