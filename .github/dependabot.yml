@@ -45,6 +45,7 @@ updates:
     directories:
       - /devTools
       - /frontend
+      - /testing/compose/mcp-client-check
     schedule:
       interval: "weekly"
     cooldown:
